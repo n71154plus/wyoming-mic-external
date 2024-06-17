@@ -3,7 +3,7 @@ args=()
 
 /app/script/run \
     --uri tcp://0.0.0.0:10600 \
-    --program "ffmpeg -loglevel quiet -i rtsp://admin:Kaewniaqn6375+@192.168.0.228:554/stream2 -vn -acodec pcm_s16le -ar 16000 -ac 1 -f s16le - \
+    --program "ffmpeg -loglevel quiet -i rtsp://admin:Kaewniaqn6375+@192.168.0.228:554/stream2 -vn -acodec pcm_s16le -ar 16000 -ac 1 -f s16le - \"
     --rate 16000  \
     --width 2 \
     --channels 1 "${args[@]}"
